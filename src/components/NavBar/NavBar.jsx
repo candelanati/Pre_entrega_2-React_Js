@@ -5,7 +5,6 @@ function NavBar() {
     function HandleClick (opcion){
         console.log("click en: "+opcion)
     }
-
     return (
         <nav>
             <ul className="navClass">
@@ -22,7 +21,6 @@ function Filtro ({children, HandleClick}){
             <button onClick={()=>HandleClick(children)}>{children}</button>
         </li>
     )
-
 }
 
 export default NavBar

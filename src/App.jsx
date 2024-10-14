@@ -1,6 +1,6 @@
 import './App.css'
 import NavBar from './components/NavBar/NavBar'
-// import Logo from './components/Logo/Logo'
+ import Logo from './components/Logo/Logo'
 // import CardPoster from './components/CardPoster/CardPoster'
 // import Button from './components/Button/Button'
 
@@ -10,8 +10,8 @@ function App() {
   return (
     <main>
       <NavBar/>
-      {/* <Logo/>
-      <CardPoster/>
+      <Logo/>
+      {/* <CardPoster/>
       <div className='div-button-order'>
           <Button text="order" />
         </div> */}
