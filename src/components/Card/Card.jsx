@@ -28,12 +28,15 @@ const [data, setData] = useState([])
 
 function ProductBox ({producto}){
     return(
-        <div>
+        <div className='card-posters'>
             <img src={producto.imagen} alt={"portada poster "+producto.titulo} />
             
             <h3>{producto.titulo}</h3>
             <p>{producto.precio}</p>
-            <button>ver más</button>
+            <div className='div-boton-ver-mas'>
+                <button className='boton-ver-mas'>ver más</button>
+            </div>
+            
         </div>
     )
 }

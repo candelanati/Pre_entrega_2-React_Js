@@ -12,7 +12,10 @@ function App() {
     <main>
       <NavBar/>
       <Logo/>
-      <Card/>
+      <div className='cards-espacio'>
+        <Card/>
+      </div>
+      
       {/* <CardPoster/>
       <div className='div-button-order'>
           <Button text="order" />
