@@ -4,6 +4,7 @@ import './App.css'
 // import Card from './components/Card/Card'
 import { Routes, Route} from 'react-router-dom'
 import Home from './components/Home/Home'
+import Descripcion from './components/Descripcion/Descripcion'
 // import CardPoster from './components/CardPoster/CardPoster'
 // import Button from './components/Button/Button'
 
@@ -12,8 +13,9 @@ function App() {
 
   return (
       <Routes>
-        {/* <Route path="/descripcion" element={<Description/>}/> */}
+        <Route path="/descripcion/:id" element={<Descripcion/>}/>
         <Route path="/" element={<Home/>} />
+        {/* hacer 404 !!!!!!!!!!!!!!!!!!!!!! */}
       </Routes>
 
   )

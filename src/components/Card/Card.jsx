@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Card.css';
+import { Link } from 'react-router-dom';
 
 
 function Card (){
@@ -30,14 +31,14 @@ function ProductBox ({producto}){
     return(
         <div className='card-posters'>
             <img src={producto.imagen} alt={"portada poster "+producto.titulo} />
-            
+
             <h3>{producto.titulo}</h3>
             <h4>{producto.color}</h4>
             <p>{producto.precio}</p>
+
             <div className='div-boton-ver-mas'>
-                <button className='boton-ver-mas'>ver más</button>
+                <Link to={`/descripcion/${producto.id}`} className='boton-ver-mas' >ver más</Link>
             </div>
-            
         </div>
     )
 }
