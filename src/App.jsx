@@ -1,6 +1,7 @@
 import './App.css'
 import NavBar from './components/NavBar/NavBar'
- import Logo from './components/Logo/Logo'
+import Logo from './components/Logo/Logo'
+import Card from './components/Card/Card'
 // import CardPoster from './components/CardPoster/CardPoster'
 // import Button from './components/Button/Button'
 
@@ -11,6 +12,7 @@ function App() {
     <main>
       <NavBar/>
       <Logo/>
+      <Card/>
       {/* <CardPoster/>
       <div className='div-button-order'>
           <Button text="order" />
