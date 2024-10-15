@@ -7,7 +7,6 @@ import { ProductBox } from '../Card/Card';
 function Filtro (){
     const path = useParams()
     const filtro = path.color
-    console.log("FILTRO "+filtro)
 
     const [data, setData] = useState([])
 
@@ -20,14 +19,14 @@ function Filtro (){
             setData(filtrados);
         })
         .catch((error) => console.error('Error al cargar el JSON:', error));
-    }, []);
+    }, [filtro]);
     
     if(data.length===0){
         return(
             <p>No se encontro ningun producto.</p>
         )
     }
-    
+
 
     return(
         <>
