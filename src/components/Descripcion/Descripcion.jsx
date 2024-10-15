@@ -40,13 +40,4 @@ function Descripcion (){
     )
 }
 
-// function DescripcionHome () {
-//     <main>
-//         <NavBar/>
-//         <div className='cards-espacio'>
-//             <Descripcion/>
-//         </div>
-//     </main>
-// }
-
 export default Descripcion
