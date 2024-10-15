@@ -25,7 +25,7 @@ function Descripcion (){
         return <h2>Producto no encontrado</h2>;
     }
     return(
-        <>
+        <div className='div-descripcion-entera'>
             <div className='div-card-poster'>
                 <h1>{producto.titulo}</h1>
                 <img src={`/${producto.imagen}`} alt={"portada poster "+producto.titulo} />
@@ -35,8 +35,9 @@ function Descripcion (){
             <div className='descripcion-producto'>
                 <p>Descripción: {producto.descripcion}</p>
             </div>
+            <button className='boton-comprar'>comprar</button>
 
-        </>
+        </div>
     )
 }
 
