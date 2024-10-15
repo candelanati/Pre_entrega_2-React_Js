@@ -1,24 +1,23 @@
 import React, { useState } from 'react';
 import './NavBar.css';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
-    function HandleClick (opcion){
-        console.log("click en: "+opcion)
-    }
+    
     return (
         <nav>
             <ul className="navClass">
-                <Filtro HandleClick={HandleClick}>claro</Filtro>
-                <Filtro HandleClick={HandleClick}>oscuro</Filtro>
+                <Filtro>claro</Filtro>
+                <Filtro>oscuro</Filtro>
             </ul>
         </nav>
     );
 }
 
-function Filtro ({children, HandleClick}){
+function Filtro ({children}){
     return(
         <li>
-            <button onClick={()=>HandleClick(children)}>{children}</button>
+            <Link to={`/filtrados/${children}`}>{children}</Link>
         </li>
     )
 }

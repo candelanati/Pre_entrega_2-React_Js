@@ -15,6 +15,7 @@ const [data, setData] = useState([])
         })
         .catch((error) => console.error('Error al cargar el JSON:', error));
     }, []);
+    
     return(
         <>
             {data && data.map((producto)=>{
@@ -27,7 +28,7 @@ const [data, setData] = useState([])
     );
 }
 
-function ProductBox ({producto}){
+export function ProductBox ({producto}){
     return(
         <div className='card-posters'>
             <img src={producto.imagen} alt={"portada poster "+producto.titulo} />
@@ -44,3 +45,4 @@ function ProductBox ({producto}){
 }
 
 export default Card
+

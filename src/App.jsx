@@ -1,13 +1,8 @@
 import './App.css'
-// import NavBar from './components/NavBar/NavBar'
-// import Logo from './components/Logo/Logo'
-// import Card from './components/Card/Card'
 import { Routes, Route} from 'react-router-dom'
 import Home from './components/Home/Home'
 import Descripcion from './components/Descripcion/Descripcion'
-// import CardPoster from './components/CardPoster/CardPoster'
-// import Button from './components/Button/Button'
-
+import Filtrado from './components/Filtrado/Filtrado'
 function App() {
   // const [count, setCount] = useState(0)
 
@@ -15,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/descripcion/:id" element={<Descripcion/>}/>
         <Route path="/" element={<Home/>} />
+        <Route path='/filtrados/:color' element={<Filtrado/>} />
         {/* hacer 404 !!!!!!!!!!!!!!!!!!!!!! */}
       </Routes>
 
