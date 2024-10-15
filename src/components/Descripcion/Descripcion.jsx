@@ -3,7 +3,6 @@ import './Descripcion.css'
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
-
 function Descripcion (){
     const path = useParams()
     const idProducto = parseInt(path.id)
@@ -19,7 +18,6 @@ function Descripcion (){
         })
         .catch((error) => console.error('Error al cargar el JSON:', error));
     }, []);
-
     
     const producto = data.find((p) => p.id === idProducto);
     
@@ -32,14 +30,23 @@ function Descripcion (){
                 <h1>{producto.titulo}</h1>
                 <img src={`/${producto.imagen}`} alt={"portada poster "+producto.titulo} />
                 <h2>Detalles:</h2>
-                <p>{producto.precio}</p>
+                <p>Precio: ${producto.precio}</p>
             </div>
             <div className='descripcion-producto'>
-                <p>{producto.descripcion}</p>
+                <p>Descripción: {producto.descripcion}</p>
             </div>
 
         </>
     )
 }
+
+// function DescripcionHome () {
+//     <main>
+//         <NavBar/>
+//         <div className='cards-espacio'>
+//             <Descripcion/>
+//         </div>
+//     </main>
+// }
 
 export default Descripcion

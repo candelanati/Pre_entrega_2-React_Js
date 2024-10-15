@@ -7,7 +7,7 @@ function Home (){
 return(
     <main>
         <NavBar/>
-        <Logo/>
+        
         <div className='cards-espacio'>
             <Card/>
         </div>
