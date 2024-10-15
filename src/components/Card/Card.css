@@ -15,6 +15,7 @@
 }
 .card-posters > img{
     height: 400px;
+    aspect-ratio: 100/141;
     border: 10px solid;
     border-color: rgba(0, 0, 0, 0.419);
 }

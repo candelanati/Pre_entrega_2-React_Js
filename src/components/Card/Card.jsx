@@ -31,11 +31,11 @@ const [data, setData] = useState([])
 export function ProductBox ({producto}){
     return(
         <div className='card-posters'>
-            <img src={producto.imagen} alt={"portada poster "+producto.titulo} />
+            <img src={`../${producto.imagen}`} alt={"portada poster "+producto.titulo} />
 
             <h3>{producto.titulo}</h3>
             <h4>{producto.color}</h4>
-            <p>{producto.precio}</p>
+            <p>${producto.precio}</p>
 
             <div className='div-boton-ver-mas'>
                 <Link to={`/descripcion/${producto.id}`} className='boton-ver-mas' >ver más</Link>
